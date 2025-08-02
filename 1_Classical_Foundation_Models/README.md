@@ -1,4 +1,4 @@
-# MLP Implementation for MNIST Classification
+# 1. Classical Foundation Models
 
 This module implements:
 - [x] **Linear Regression + L1,L2 Regularization**  
@@ -37,7 +37,7 @@ This module implements:
 
 
 
-## MLP
+## MLP Implementation for MNIST Classification
 
 ### Custom Components
 - **MyReLU**: Custom ReLU activation with optional in-place operation
