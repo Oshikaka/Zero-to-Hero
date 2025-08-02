@@ -1,8 +1,43 @@
 # MLP Implementation for MNIST Classification
 
-This module implements a Multi-Layer Perceptron (MLP) from scratch using PyTorch for MNIST digit classification.
+This module implements:
+- [x] **Linear Regression + L1,L2 Regularization**  
+  Focus: Autograd / MSE / SGD  
+  Suggested Task: Hand-code forward + backward
 
-## Features
+- [x] **Logistic Regression**  
+  Focus: Binary Classification / Sigmoid + BCE  
+  Suggested Task: Simple MNIST classification
+
+- [x] **MLP (Multi-Layer Perceptron)**  
+  Focus: Fully-connected layers / Dropout / BatchNorm  
+  Suggested Task: MNIST classification
+
+- [ ] **CNN (Convolutional Neural Network)**  
+  Focus: Convolution / Pooling / Kernel understanding  
+  Suggested Task: CIFAR10 classification
+
+- [ ] **RNN (Recurrent Neural Network)**  
+  Focus: Sequence modeling / Hidden state propagation  
+  Suggested Task: Text sentiment classification
+
+## File Structure
+
+```
+1_Classical_Foundation_Models/
+├── mlp.py                          # Main training script
+├── inference_pretrained_model.py   # Inference script
+├── linear_regression.ipynb         # Linear regression examples
+├── logistic_regression.ipynb       # Logistic regression examples
+├── data/                           # MNIST dataset (auto-downloaded)
+├── logs/                           # TensorBoard logs
+└── checkpoints/                    # Saved model checkpoints
+    └── best_model.pth
+```
+
+
+
+## MLP
 
 ### Custom Components
 - **MyReLU**: Custom ReLU activation with optional in-place operation
@@ -99,19 +134,6 @@ checkpoints/best_model.pth
 }
 ```
 
-## File Structure
-
-```
-1_Classical_Foundation_Models/
-├── mlp.py                          # Main training script
-├── inference_pretrained_model.py   # Inference script
-├── linear_regression.ipynb         # Linear regression examples
-├── logistic_regression.ipynb       # Logistic regression examples
-├── data/                           # MNIST dataset (auto-downloaded)
-├── logs/                           # TensorBoard logs
-└── checkpoints/                    # Saved model checkpoints
-    └── best_model.pth
-```
 
 ## Custom Components Explained
 
