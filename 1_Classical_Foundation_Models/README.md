@@ -31,10 +31,11 @@ Input (784) → Flatten → Linear → ReLU → [BatchNorm] → Dropout → ... 
 source .venv/bin/activate
 
 # Train with default parameters
-python MLP/mlp.py
+cd 1_Classical_Foundation_Models
+python mlp.py
 
 # Custom configuration
-python MLP/mlp.py --hidden_dims 256,128,64 --epochs 20 --batch_size 64 --learning_rate 0.001
+python mlp.py --hidden_dims 256,128,64 --epochs 20 --batch_size 64 --learning_rate 0.001
 ```
 
 ### Command Line Arguments
@@ -101,7 +102,7 @@ checkpoints/best_model.pth
 ## File Structure
 
 ```
-1_MLP/
+1_Classical_Foundation_Models/
 ├── mlp.py                          # Main training script
 ├── inference_pretrained_model.py   # Inference script
 ├── linear_regression.ipynb         # Linear regression examples
