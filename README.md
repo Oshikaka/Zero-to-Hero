@@ -90,3 +90,59 @@ In `1_Classical_Foundation_Models`.
   Focus: Patch embedding / MLP head  
   Suggested Task: CIFAR10 classification
 
+### Phase 3: Applied Model Combinations (Multimodal / Self-supervised / Fine-tuning)
+
+- [ ] **Denoising AutoEncoder (DAE)**  
+  Focus: Reconstruction / Robustness to noise  
+  Application: Image / Audio denoising
+
+- [ ] **BYOL / SimCLR**  
+  Focus: Self-supervised contrastive learning  
+  Application: Learning from image augmentations
+
+- [ ] **Image Captioning Model**  
+  Focus: CNN + RNN or Transformer  
+  Application: Generate captions for images
+
+- [ ] **UNet**  
+  Focus: Encoder-decoder with skip connections  
+  Application: Image segmentation / Diffusion base
+
+- [ ] **ControlNet (Simplified)**  
+  Focus: Conditioning diffusion generation  
+  Application: Sketch-to-image / Pose-to-image
+
+- [ ] **LoRA / QLoRA**  
+  Focus: Parameter-efficient fine-tuning  
+  Application: Finetune large language models
+
+- [ ] **RAG (Retrieval-Augmented Generation)**  
+  Focus: Combine generation with retrieval  
+  Application: Build a QA system with vector database
+
+### Phase 4: Large Model Training Components (Understand & Modularize)
+
+- [ ] **Tokenizer / Vocab**  
+  Focus: BPE / WordPiece / SentencePiece
+
+- [ ] **Positional Embedding**  
+  Focus: Sinusoidal, Learnable, Rotary (RoPE)
+
+- [ ] **Attention Mask**  
+  Focus: Causal / Padding / Cross-attention
+
+- [ ] **Beam Search / Top-k / Top-p**  
+  Focus: Decoding strategies
+
+- [ ] **Mixed Precision Training**  
+  Focus: float16 / bfloat16 optimization
+
+- [ ] **EMA / Checkpointing**  
+  Focus: Training stability and resume
+
+- [ ] **DDP / FSDP**  
+  Focus: Distributed training techniques
+
+- [ ] **TensorBoard / Weights & Biases**  
+  Focus: Visualization and tracking
+
