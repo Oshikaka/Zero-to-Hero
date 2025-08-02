@@ -93,13 +93,14 @@ python mlp.py --hidden_dims 256,128,64 --epochs 20 --batch_size 64 --learning_ra
 
 ```bash
 # Train with batch normalization and more epochs
-python MLP/mlp.py --batch_norm --epochs 50 --hidden_dims 512,256,128
+cd 1_Classical_Foundation_Models
+python mlp.py --batch_norm --epochs 50 --hidden_dims 512,256,128
 
 # Train with higher learning rate and larger batch size
-python MLP/mlp.py --learning_rate 0.01 --batch_size 128
+python mlp.py --learning_rate 0.01 --batch_size 128
 
 # Train with custom architecture
-python MLP/mlp.py --hidden_dims 1024,512,256,128,64 --dropout 0.3
+python mlp.py --hidden_dims 1024,512,256,128,64 --dropout 0.3
 ```
 
 ## Monitoring Training
